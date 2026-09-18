@@ -3,6 +3,7 @@ import Navigation from './Navigation';
 import Pets from './Pets';
 import Footer from './Footer';
 import Players from './Players';
+import Main from './components/Main';
 
 function App() {
   return (
@@ -12,8 +13,15 @@ function App() {
       <Pets />
       <Footer /> 
       */}
-      {/* Exercise 5 */}
+
+      {/* Exercise 5
       <Players />
+      */}
+
+      {/* Exercise 6 */}
+      <Navigation />
+      <Main />
+      <Footer />
     </>
   );
 }
