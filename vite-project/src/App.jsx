@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 import Pets from './Pets';
 import Footer from './Footer';
 import Players from './Players';
-import Main from './components/Main';
+import Main from '../components/Main';
 
 function App() {
   return (
