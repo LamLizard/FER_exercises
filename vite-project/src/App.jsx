@@ -4,6 +4,7 @@ import Pets from './Pets';
 import Footer from './Footer';
 import Players from './Players';
 import Main from '../components/Main';
+import HomeLayout from './HomeLayout';
 
 function App() {
   return (
@@ -18,10 +19,13 @@ function App() {
       <Players />
       */}
 
-      {/* Exercise 6 */}
+      {/* Exercise 6
       <Navigation />
       <Main />
-      <Footer />
+      <Footer /> 
+      */}
+
+      <HomeLayout />
     </>
   );
 }
