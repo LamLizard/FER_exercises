@@ -1,11 +1,10 @@
 import "./HomeLayout.css";
-// import Player from "./Players/Players";
+import Player from "./Players";
 
 function HomeLayout() {
 
   return (
     <>
-      {/* NAVBAR */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">Navbar</a>
@@ -49,7 +48,6 @@ function HomeLayout() {
         </div>
       </nav>
 
-      {/* CAROUSEL */}
       <div id="mainCarousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" className="active"></button>
@@ -75,11 +73,10 @@ function HomeLayout() {
         </button>
       </div>
 
-      {/* NEW PRODUCT SECTION */}
       <div className="container my-5">
         <h2 className="mb-1">NEW PRODUCT</h2>
         <p className="text-muted mb-4">List product description</p>
-        {/* <Player /> */}
+        <Player />
       </div>
     </>
   );
