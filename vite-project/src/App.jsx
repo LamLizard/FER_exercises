@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Players from './Players';
 import Main from '../components/Main';
 import HomeLayout from './HomeLayout';
+import { ThemeContext, ThemeProvider } from './components/ThemeContext';
 
 function App() {
   return (
@@ -25,7 +26,11 @@ function App() {
       <Footer /> 
       */}
 
-      <HomeLayout />
+      {/* Exercise 7 + 8 + 9 */}
+      <Navigation />
+      <HomeLayout /> 
+
+      
     </>
   );
 }

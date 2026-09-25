@@ -5,7 +5,7 @@ function HomeLayout() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      {/* <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">Navbar</a>
           <button
@@ -46,7 +46,7 @@ function HomeLayout() {
             </form>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       <div id="mainCarousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">

@@ -1,21 +1,39 @@
+import { useContext } from 'react'
+import { ThemeContext } from './components/ThemeContext'
+
 export default function Navigation() {
+    const { theme, toggle, dark } = useContext(ThemeContext)
+
     return (
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <div style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
+            <nav className="navbar navbar-expand-lg" style={{ backgroundColor: theme.backgroundColor }}>
+                <a className="navbar-brand" href="#" style={{ color: theme.color }}>Navbar</a>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <a className="nav-link" href="#" style={{ color: theme.color }}>Home <span className="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#products">Products</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#products" style={{ color: theme.color }}>Products</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#about" style={{ color: theme.color }}>About</a>
                         </li>
                     </ul>
                 </div>
+                <button
+                    type="button"
+                    onClick={toggle}
+                    style={{
+                        backgroundColor: theme.backgroundColor,
+                        color: theme.color,
+                        border: `1px solid ${theme.color}`,
+                        padding: '6px 12px',
+                        cursor: 'pointer'
+                    }}
+                >
+                    Switch Nav to {dark ? 'Light' : 'Dark'}
+                </button>
             </nav>
         </div>
     );
